@@ -1,17 +1,16 @@
 #### Fonction secondaire
+"""g"""
 
 
-def ispalindrome(p):
-
-    # votre code ici
-    
-    return False
-
-#### Fonction principale
+def ispalindrome(s):
+    """fonction qui test si un mot est un palindrome"""
+    if s!=s[::-1]:
+        return False
+    return True
 
 
 def main():
-
+    """appel de la fonction"""
     # vos appels à la fonction secondaire ici
 
     for s in ["radar", "kayak", "level", "rotor", "civique", "deifie"]:
